@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule Your Tasks</h1>
+        
+        <div class="task-form">
+            <select id="taskType">
+                <option value="" disabled selected>Select Task Type</option>
+                <option value="Meeting">Meeting</option>
+                <option value="Work">Work</option>
+                <option value="Exercise">Exercise</option>
+                <option value="Study">Study</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="taskTitle" placeholder="Task Title">
+            <input type="time" id="taskTime">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="task-list">
+            <h2>Your Tasks</h2>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
